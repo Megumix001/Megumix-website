@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div>
+
+<div class="header">
+  <h1>Hello and this is my website!</h1>
+  <p>I am Juan Gabriel Labay aka "Megumix"</p>
+</div>
+
+<div class="navbar">
+ 
+<a href="https://www.youtube.com/channel/UCyM-w73XQUhTKuRpu18qyCg" target="_blank">Youtube</a>
+
+  
+  <a href="https://www.facebook.com/MegumixGD/?ref=pages_you_manage&__tn__=%3C" target="_blank">Facebook</a>
+
+<a href="https://github.com/Cannonmix" target="_blank">Github</a>
+  
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    I love coding and playing geometry dash.
+ 
+    <h5>Photo of me: </h5>
+  <img src="https://i.kym-cdn.com/entries/icons/original/000/000/266/no_u_for_knowyourmeme.jpg" alt="Girl in a jacket" style="width:100px;height:100px;">
+    <p>No you can't see my photos</p>
+    <h3>My favorite anime</h3>
+    <p>Yotsuba,Hutao, Kamisato </p>
+     <img src="https://i.pinimg.com/236x/95/b1/4a/95b14a1de8b7e788aaf6bab96b81f696.jpg" style="width:100px;height:100px;">
+  <img src="https://i.pinimg.com/236x/d9/ab/80/d9ab80f638411facf70ab1ad542ff380.jpg" alt="Girl in a jacket" style="width:100px;height:100px;">
+  <img src="https://i.pinimg.com/236x/19/f7/e8/19f7e88ecdf3ead830ee96a82e3de21a.jpg" alt="Girl in a jacket" style="width:100px;height:100px;">
+  </div>
+  <div class="main">
+    <h2>My favorite youtuber</h2>
+    <h5>Mrbeast</h5>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0e3GPea1Tyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h5>Dorami</h5>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0zMps3p9V9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h5>Linus tech tips</h5>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OfdQF3T2WKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>My ambitions</p>
+    <p> I want to be a coder and chief, I want to buy a house for my family and want to live in a peaceful life</p>
+    <br>
+   <h2>And ye this is the ending</h2>
+    <h5>Bye</h5>
+      <img src="https://c.tenor.com/1ZNXoqckZuoAAAAM/bye.gif" alt="Megu" style="width:560px;height:315px;">
+    
+    <p>Disclaimer</p>
+    <p>The website created by w3schools.com and publish by github.</p>
+  </div>
+</div>
+<h2>Link</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+</body>
+</html>
